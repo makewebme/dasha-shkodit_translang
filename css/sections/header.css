@@ -1,7 +1,86 @@
 .section-header {
-  .text {
-    color: #161e6d;
-    font-size: 45px;
-    font-weight: 500;
+  height: 900px;
+  background-image: url(img/wave_1.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin: 0;
+
+  .top-bar {
+    display: flex;
+    width: 100%;
+    padding: 54px 50px 0;
+    align-items: center;
+
+    .btn {
+      width: 113px;
+      height: 36px;
+      border-radius: 18px;
+      color: #fff;
+      font-family: "Muli - Extra Bold", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .logo-text {
+      padding-left: 8px;
+      padding-top: 4px;
+      padding-bottom: 3px;
+    }
+
+    .phone {
+      background-image: url(img/phone-icon.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+      color: #161e6d;
+      font-family: "Avenir Next LT Pro", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 50px;
+      text-align: right;
+      margin-left: 45px;
+      padding-left: 32px;
+    }
+
+    .nav {
+      width: 395px;
+      margin-left: auto;
+      margin-right: 65px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+
+      ul {
+        background-image: url(img/rectangle.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+      
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+
+  .text-header {
+    width: 410px;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 163px;
+    padding-left: 50px;
+    padding-top: 260px;
+
+    .heading {
+      margin-top: 0;
+    }
+
+    .text {
+      margin-top: 0;
+      margin-bottom: 56px;
+    }
   }
 }

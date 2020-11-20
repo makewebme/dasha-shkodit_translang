@@ -1,3 +1,63 @@
 .section-first-section {
-  
+  margin-top: 143px;
+  margin-bottom: 170px;
+
+  .cont {
+    background-image: url(img/red-line.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .mtv {
+    max-width: 840px;
+    padding-top: 35px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+
+    .box {
+      width: 383px;
+      height: 490px;
+      padding: 82px 57px 82px 50px;
+      color: #52585b;
+      font-family: "Avenir Next LT Pro", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      box-sizing: border-box;
+      background-image: url(img/line-wave-small.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .box-heading {
+        padding-top: 46px;
+        max-width: 260px;
+        color: #161e6d;
+        font-family: "Avenir Next LT Pro - Demi", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+      }
+
+      &:hover {
+        background-image: url(img/gradient-blue-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #fff;
+
+        .box-heading {
+          color: #fff;
+        }
+      }
+
+      .box-desc {
+        max-width: 276px;
+      }
+    }
+  }
 }
