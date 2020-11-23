@@ -22,8 +22,10 @@ module.exports = {
     new HtmlWebpackPugPlugin(),
 
     new MiniCssExtractPlugin({ filename: 'style.css' }), // Generating CSS
-    new CopyWebpackPlugin([{ from: 'img', to: 'img' }]), // Copy images
-    new CopyWebpackPlugin([{ from: 'fonts', to: 'fonts' }]) // Copy fonts
+    new CopyWebpackPlugin([
+      { from: 'img', to: 'img' }, // Copy images
+      { from: 'fonts', to: 'fonts' }, // Copy fonts
+    ])
   ],
 
   optimization: {

@@ -2,66 +2,76 @@
 /* GLOBAL TAGS */
 
 @font-face {
-    font-family: 'Avenir Next LT Pro'; 
-    src: url('/fonts/Avenir/AvenirNextLTPro-Regular.otf'); 
-    font-style: normal; 
-    font-weight: normal; 
-    } 
+  font-family: 'Avenir Next LT Pro';
+  src: url('/fonts/Avenir/AvenirNextLTPro-Thin.otf');
+  font-weight: 100;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'Avenir Next LT Pro - Demi'; 
-    src: url('/fonts/Avenir/AvenirNextLTPro-Demi.otf'); 
-    font-style: normal; 
-    font-weight: normal; 
-    }
+  font-family: 'Avenir Next LT Pro';
+  src: url('/fonts/Avenir/AvenirNextLTPro-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('/fonts/Avenir/AvenirNextLTPro-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
 
 body {
-    font-family: "Avenir Next LT Pro", sans-serif;
-    margin: 0;
+  font-family: "Avenir Next LT Pro", sans-serif;
+  margin: 0;
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
 .cont {
-    width: 100%;
-    max-width: 1360px;
-    margin: 0 auto;
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .heading {
-    color: #161e6d;
-    font-size: 50px;
-    line-height: 65px;
-
+  color: #161e6d;
+  font-size: 50px;
+  line-height: 65px;
+  margin-bottom: 50px;
 }
 
 h2 {
-    color: #161e6d;
-    font-family: "Avenir Next LT Pro", sans-serif;
-    font-size: 45px;
-    font-weight: 400;
-    line-height: 55px;
+  color: #161e6d;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 55px;
 }
 
 .text {
-    color: #52585b;
-    font-size: 17px;
-    line-height: 33px;
+  color: #52585b;
+  font-size: 17px;
+  line-height: 33px;
 }
 
 .btn {
-    width: 216px;
-    height: 56px;
-    border-radius: 28px;
-    background-image: linear-gradient(to right, #fb515e 0%, #fb694f 100%);
-    color: #ffffff;
-    font-family: "Avenir Next LT Pro - Demi", sans-serif;
-    font-size: 14px;
-    line-height: 33px;
-    text-align: center;
-    text-transform: uppercase;
-    border: 0;
+  width: 216px;
+  height: 56px;
+  border-radius: 28px;
+  background-image: linear-gradient(to right, #fb515e 0%, #fb694f 100%);
+  color: #fff;
+  font-family: "Avenir Next LT Pro - Demi", sans-serif;
+  font-size: 14px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #fff;
 }
