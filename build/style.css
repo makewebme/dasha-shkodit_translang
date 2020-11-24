@@ -87,6 +87,7 @@ a {
   justify-content: space-between;
   width: 100%;
 }
+
 .section-header {
   height: 900px;
   background-image: url(img/wave_1.svg);
@@ -293,4 +294,5 @@ a {
         line-height: 50px;
         margin: 0;
     }
+
 
