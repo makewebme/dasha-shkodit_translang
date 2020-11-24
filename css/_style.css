@@ -1,4 +1,7 @@
 @import 'global.css';
 
 @import 'sections/header.css';
+
 @import 'sections/first-section.css';
+
+@import 'sections/section-percentage.css';

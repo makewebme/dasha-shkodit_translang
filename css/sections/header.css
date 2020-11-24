@@ -71,16 +71,6 @@
     text-align: left;
     font-weight: 400;
     margin-bottom: 163px;
-<<<<<<< HEAD
-    padding-left: 160px;
-
-    .heading {
-      margin-top: 0;
-      margin-bottom: 50px;
-      padding-top: 260px;
-    }
-    
-=======
     padding-left: 50px;
     padding-top: 260px;
 
@@ -88,13 +78,9 @@
       margin-top: 0;
     }
 
->>>>>>> fe809ff5e37e099833578eb58f6b5dc27926794c
     .text {
       margin-top: 0;
       margin-bottom: 56px;
     }
   }
-<<<<<<< HEAD
-=======
 }
->>>>>>> fe809ff5e37e099833578eb58f6b5dc27926794c

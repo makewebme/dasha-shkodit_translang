@@ -1,0 +1,57 @@
+.section-percentage {
+
+    height: 1251px;
+    background-image: url('img/big-lightblue-wave.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .cont {
+        height: 1251px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        max-width: 858px;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 40px;
+        max-width: 865px;
+        text-align: center;
+        margin-bottom: 110px;
+    }
+
+    .boxes {
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+
+    .box {
+        text-align: center;
+    }
+    
+    .percent {
+        color: #161e6d;
+        font-family: "Avenir Next LT Pro - Demi", sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 37px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .percent-text {
+        color: #52585b;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 50px;
+        margin: 0;
+    }
+
+}
