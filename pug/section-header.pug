@@ -1,2 +1,22 @@
 section.section-header
-  p.text Are You Ready? Let’s Work! 2
+  div.top-bar
+    div.logo
+      img(src="img/logo.png")
+
+    div.logo-text
+      img(src="img/logo_text.png")
+
+    div.phone +0123456789
+
+    div.nav
+      ul
+        each name in ['HOME', 'Services', 'Testimonials', 'Contact']
+          li
+            a(href="#")= name
+
+    button.btn Sign Up
+
+  div.text-header
+    p.heading Investment To The Future Business Technology
+    p.text Virality crowdsource monetization social proof client IPad focus supply chain direct.
+    button.btn Get Started
