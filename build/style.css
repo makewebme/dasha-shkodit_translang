@@ -11,14 +11,6 @@
 @font-face {
   font-family: 'Avenir Next LT Pro';
   src: url('/fonts/Avenir/AvenirNextLTPro-Regular.otf');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Avenir Next LT Pro';
-  src: url('/fonts/Avenir/AvenirNextLTPro-Bold.otf');
-  font-weight: 700;
   font-style: normal;
 }
 
@@ -99,7 +91,7 @@ a {
   .section-header .top-bar {
     display: flex;
     width: 100%;
-    padding: 54px 50px 0;
+    padding: 54px 160px 0;
     align-items: center;
   }
 
@@ -162,7 +154,7 @@ a {
     text-align: left;
     font-weight: 400;
     margin-bottom: 163px;
-    padding-left: 50px;
+    margin-left: 160px;
     padding-top: 260px;
   }
 
@@ -187,7 +179,7 @@ a {
   }
 
   .section-first-section .mtv {
-    max-width: 840px;
+    max-width: 845px;
     padding-top: 35px;
     text-align: center;
     margin: 0 auto;
@@ -239,14 +231,23 @@ a {
 
 .section-percentage {
 
-    height: 1251px;
     background-image: url('img/big-lightblue-wave.png');
     background-repeat: no-repeat;
     background-position: center center;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 74.46%;
+    background-size: cover;
+    position: relative;
 
 }
 
     .section-percentage .cont {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
         height: 1251px;
         display: flex;
         justify-content: center;
@@ -294,5 +295,60 @@ a {
         line-height: 50px;
         margin: 0;
     }
+.section-services-1 {
+
+    position: relative;
+
+}
+    
+    .section-services-1 .wave {
+        width: 50.71%;
+    }
+    
+    .section-services-1 .wave1 {
+    background-image: url('img/light-blue-wave-1.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 98.35%;
+    background-size: cover;
+    position: relative;
+    }
+    
+    .section-services-1 .cont {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        height: 840px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .section-services-1 .desc {
+            max-width: 490px;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+    .section-services-1 h2 {
+            margin-bottom: 60px;
+            margin-top: 0;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 50px;
+        }
+    
+    .section-services-1 .text {
+            margin: 0;
+        }
+    
+    .section-services-1 .btn {
+            margin-top: 60px;
+
+        }
 
 

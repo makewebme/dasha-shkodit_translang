@@ -1,11 +1,20 @@
 .section-percentage {
 
-    height: 1251px;
     background-image: url('img/big-lightblue-wave.png');
     background-repeat: no-repeat;
     background-position: center center;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 74.46%;
+    background-size: cover;
+    position: relative;
 
     .cont {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
         height: 1251px;
         display: flex;
         justify-content: center;
