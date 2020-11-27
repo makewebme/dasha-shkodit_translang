@@ -1,0 +1,167 @@
+.section-testimonials {
+
+  margin-top: 120px;
+  position: relative;
+
+  .blue-wave {
+    width: 61.36%;
+    margin-right: auto;
+  }
+    
+    .blue-wave1 {
+    background-image: url('img/blue-wave-left.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 107.97%;
+    background-size: cover;
+    position: relative;
+    }
+  
+    .cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 1031px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+  
+    .desc {
+      max-width: 426px;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 115px;
+
+      .text {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 55px;
+      }
+
+      h2 {
+        color: #fff;
+        margin-bottom: 68px;
+      }
+
+      .btn {
+        width: 163px;
+        height: 55px;
+      }
+    }
+
+  .slider {
+    position: relative;
+    width: 900px;
+    height: 800px;
+  }
+  
+  .slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: .5s;
+      -moz-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+  }
+  
+  .review-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .username {
+    height: 52px;
+    line-height: 52px;
+    background-image: url('img/userpic.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    padding-left: 80px;
+    color: #161e6d;
+    font-family: "Avenir Next LT Pro - Demi";
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .reviews-left {
+    height: 100%;
+    margin-right: 53px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .review1 {
+    width: 420px;
+    height: 280px;
+    padding: 40px 60px 40px 45px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    margin: 40px 0;
+    background-color: #fff;
+  }
+
+  .review2 {
+    width: 329px;
+    height: 332px;
+    padding: 45px 42px 44px 40px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    background-color: #fff;
+  }
+  
+  .slide_rev {
+    display: none;
+  }
+  
+  #arrow_next label, #arrow_prev label {
+    color: rgba(0, 0, 0, .7);
+    position: absolute;
+    cursor: pointer;
+    visibility: hidden;
+    top: 83%;
+    font-size: 80px;
+  }
+  
+  #arrow_prev label {
+    left: 635px;
+  }
+  
+  #arrow_next label {
+    right: 64px;
+  }
+  
+  #rev1-4:checked ~ #first,
+  #rev5-8:checked ~ #second
+  {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #rev1-4:checked ~ #arrow_next label:nth-child(2),
+  #rev5-8:checked ~ #arrow_next label:nth-child(1)
+  {
+    visibility: visible;
+  }
+  
+  #rev1-4:checked ~ #arrow_prev label:nth-child(2),
+  #rev5-8:checked ~ #arrow_prev label:nth-child(1)
+  {
+    visibility: visible;
+  }
+}
