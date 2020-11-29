@@ -15,8 +15,21 @@
 }
 
 @font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('/fonts/Avenir/AvenirNextLTPro-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Avenir Next LT Pro - Demi';
   src: url('/fonts/Avenir/AvenirNextLTPro-Demi.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font Awesome';
+  src: url('/fonts/FontAwesome.otf');
   font-style: normal;
 }
 
