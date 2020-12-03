@@ -1,5 +1,5 @@
 
-/* GLOBAL TAGS */
+/* Fonts */
 
 @font-face {
   font-family: 'Avenir Next LT Pro';
@@ -11,6 +11,14 @@
 @font-face {
   font-family: 'Avenir Next LT Pro';
   src: url('/fonts/Avenir/AvenirNextLTPro-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro - Demi';
+  src: url('/fonts/Avenir/AvenirNextLTPro-Demi.otf');
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -22,16 +30,15 @@
 }
 
 @font-face {
-  font-family: 'Avenir Next LT Pro - Demi';
-  src: url('/fonts/Avenir/AvenirNextLTPro-Demi.otf');
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Font Awesome';
   src: url('/fonts/FontAwesome.otf');
   font-style: normal;
 }
+
+
+
+
+/* Global tags */
 
 body {
   font-family: "Avenir Next LT Pro", sans-serif;
@@ -41,6 +48,22 @@ body {
     box-sizing: border-box;
   }
 }
+
+h2 {
+  color: #161e6d;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+/* Global classes */
 
 .cont {
   max-width: 1360px;
@@ -53,13 +76,6 @@ body {
   font-size: 50px;
   line-height: 65px;
   margin-bottom: 50px;
-}
-
-h2 {
-  color: #161e6d;
-  font-size: 45px;
-  font-weight: 400;
-  line-height: 55px;
 }
 
 .text {
@@ -80,11 +96,6 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   border: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .boxes {
