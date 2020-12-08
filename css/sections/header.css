@@ -1,9 +1,13 @@
 .section-header {
   height: 900px;
-  background-image: url(img/wave_1.svg);
+  background-image: url('img/wave_1.svg');
   background-repeat: no-repeat;
   background-position: right top;
   margin: 0;
+
+  @media (max-width: 1540px) {
+    background-position: calc(100% + 110px) top;
+  }
 
   .top-bar {
     display: flex;
@@ -16,7 +20,7 @@
       height: 36px;
       border-radius: 18px;
       color: #fff;
-      font-family: "Muli - Extra Bold", sans-serif;
+      font-family: 'Muli - Extra Bold', sans-serif;
       font-size: 12px;
       font-weight: 400;
       text-align: center;
@@ -30,11 +34,11 @@
     }
 
     .phone {
-      background-image: url(img/phone-icon.png);
+      background-image: url('img/phone-icon.png');
       background-position: left center;
       background-repeat: no-repeat;
       color: #161e6d;
-      font-family: "Avenir Next LT Pro", sans-serif;
+      font-family: 'Avenir Next LT Pro', sans-serif;
       font-size: 14px;
       font-weight: 500;
       line-height: 50px;
@@ -51,8 +55,13 @@
       font-size: 15px;
       font-weight: 400;
 
+      @media (max-width: 1540px) {
+        width: 300px;
+        margin-right: 35px;
+      }
+
       ul {
-        background-image: url(img/rectangle.png);
+        background-image: url('img/rectangle.png');
         background-repeat: no-repeat;
         background-position: left bottom;
         display: flex;
