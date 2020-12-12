@@ -8,6 +8,15 @@
   background-size: cover;
   position: relative;
 
+  @media (max-width: 1460px) {
+    min-height: 1087px;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 890px) {
+    background-image: none;
+  }
+
   .cont {
     position: absolute;
     top: 50%;
@@ -19,11 +28,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 890px) {
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      transform: none;
+      height: auto;
+    }
   }
 
   h2 {
     max-width: 858px;
     text-align: center;
+
+    @media (max-width: 1000px) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
   }
 
   .text {
@@ -33,15 +55,30 @@
     max-width: 865px;
     text-align: center;
     margin-bottom: 110px;
+
+    @media (max-width: 1000px) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
   }
 
   .boxes {
     padding-right: 65px;
     padding-left: 65px;
+
+    @media (max-width: 890px) {
+      width: 510px;
+      flex-wrap: wrap;
+    }
   }
 
   .box {
     text-align: center;
+    width: 190px;
+
+    @media (max-width: 890px) {
+      margin-bottom: 30px;
+    }
   }
 
   .percent {

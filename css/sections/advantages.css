@@ -2,7 +2,7 @@
   margin: 143px auto 170px auto;
 
   @media (max-width: 1160px) {
-    margin-top: 75px;
+    margin: 75px auto 0px auto;
   }
 
   .cont {
@@ -16,6 +16,11 @@
     padding-top: 35px;
     text-align: center;
     margin: 0 auto;
+  }
+
+  @media (max-width: 1000px) {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .boxes {
