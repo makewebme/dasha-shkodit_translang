@@ -1,6 +1,9 @@
 .section-advantages {
-  margin-top: 143px;
-  margin-bottom: 170px;
+  margin: 143px auto 170px auto;
+
+  @media (max-width: 1160px) {
+    margin-top: 75px;
+  }
 
   .cont {
     background-image: url('img/red-line.svg');
@@ -18,6 +21,13 @@
   .boxes {
     margin-top: 130px;
 
+    @media (max-width: 1160px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 70px;
+    }
+
     .box {
       width: 383px;
       height: 490px;
@@ -31,6 +41,10 @@
       background-image: url('img/line-wave-small.png');
       background-repeat: no-repeat;
       background-size: cover;
+      
+      @media (max-width: 1160px) {
+        margin-bottom: 30px;
+      }
 
       .box-heading {
         padding-top: 46px;
