@@ -7,14 +7,20 @@
   padding-bottom: 74.46%;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 
   @media (max-width: 1460px) {
-    min-height: 1087px;
+    height: 1087px;
     padding-bottom: 0;
   }
 
   @media (max-width: 890px) {
     background-image: none;
+    position: initial;
+  }
+
+  @media (max-width: 785px) {
+    height: auto;
   }
 
   .cont {
@@ -35,6 +41,7 @@
       margin: 0 auto;
       transform: none;
       height: auto;
+      position: initial;
     }
   }
 
