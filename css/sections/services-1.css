@@ -59,7 +59,7 @@
       }
 
       @media (max-width: 785px) {
-        background-position: top center;
+        background-position: bottom center;
         height: auto;
       }
   }
@@ -81,7 +81,7 @@
 
     @media (max-width: 785px) {
       text-align: center;
-      margin: 650px auto 0 auto;
+      margin: 50px auto 650px auto;
     }
   }
 
