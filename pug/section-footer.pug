@@ -1,5 +1,5 @@
 section.section-footer
-  div.cont
+  div.container
     div.white-block
       div.white-block-text
         p.text So What’s Next?
@@ -8,64 +8,68 @@ section.section-footer
 
       button.btn Contact Us
 
-    div.footer
-      div.logo
-        div.logo-image
-          img(src="img/logo.png")
+  div.footer
+    div.cont
+      div.company
+        div.company-desc
+          div.logo
+            div.logo-image
+              img(src="img/logo.png")
 
-        div.logo-text
-          img(src='img/white-logo-text.png')
+            div.logo-text
+              img(src='img/white-logo-text.png')
 
-      p.footer-text Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt laboreet dolore magna aliqua enim minim veniam.
+          p.footer-text Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt laboreet dolore magna aliqua enim minim veniam.
 
-      div.contacts
-        p.contacts-icon 
-        p.contacts-text (+61) 879 815 125
+        div.company-contacts
+          div.contacts
+            p.contacts-icon 
+            p.contacts-text (+61) 879 815 125
 
-      div.contacts
-        p.contacts-icon 
-        p.contacts-text translang@gmail.com
+          div.contacts
+            p.contacts-icon 
+            p.contacts-text translang@gmail.com
 
-      div.contacts
-        p.contacts-icon 
-        p.contacts-text 01 Central Park, NYC
+          div.contacts
+            p.contacts-icon 
+            p.contacts-text 01 Central Park, NYC
 
-    div.footer-menu
-      div.footer-menu-support
-        p.footer-menu-heading Support
+      div.footer-menu
+        div.footer-menu-support
+          p.footer-menu-heading Support
 
-        div.footer-menu-list
-          ul
-            each name in ['User dashboard', 'Contact Us', 'FAQ', 'Course Offer', 'Events']
-              li
-                a(href="#")= name
+          div.footer-menu-list
+            ul
+              each name in ['User dashboard', 'Contact Us', 'FAQ', 'Course Offer', 'Events']
+                li
+                  a(href="#")= name
 
-      div.footer-menu-services
-        p.footer-menu-heading Services
+        div.footer-menu-services
+          p.footer-menu-heading Services
 
-        div.footer-menu-list
-          ul
-            each name in ['Master Mind', 'Junior Lambs', 'Happy Kiddo', 'Master Mind', 'Junior Lambs']
-              li
-                a(href="#")= name
+          div.footer-menu-list
+            ul
+              each name in ['Master Mind', 'Junior Lambs', 'Happy Kiddo', 'Master Mind', 'Junior Lambs']
+                li
+                  a(href="#")= name
 
-      div.footer-menu-links
-        p.footer-menu-heading Links
+        div.footer-menu-links
+          p.footer-menu-heading Links
 
-        div.footer-menu-list
-          ul
-            each name in ['About', 'Blog', 'Team', 'Portfolio', 'Sign In']
-              li
-                a(href="#")= name
+          div.footer-menu-list
+            ul
+              each name in ['About', 'Blog', 'Team', 'Portfolio', 'Sign In']
+                li
+                  a(href="#")= name
 
-      div.footer-menu-follow
-        p.footer-menu-heading Follow Us
+        div.footer-menu-follow
+          p.footer-menu-heading Follow Us
 
-        div.footer-menu-list
-          ul
-            each name in ['Facebook', 'Twitter', 'Instagram', 'Tripadvisor', 'Youtube']
-              li
-                a(href="#")= name
+          div.footer-menu-list
+            ul
+              each name in ['Facebook', 'Twitter', 'Instagram', 'Tripadvisor', 'Youtube']
+                li
+                  a(href="#")= name
 
-  div.copyright
-    p © Copyright 2018 Translang Design by Zisan
+    div.copyright
+      p © Copyright 2018 Translang Design by Zisan

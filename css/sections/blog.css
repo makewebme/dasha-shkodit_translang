@@ -2,6 +2,10 @@
 
   margin-top: 145px;
 
+  @media (max-width: 990px) {
+    margin-top: 200px;
+  }
+
   .section-heading {
     text-align: center;
   }

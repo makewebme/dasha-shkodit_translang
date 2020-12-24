@@ -33,12 +33,13 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    height: 1031px;
+    height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
+    max-width: 1495px;
 
     @media (max-width: 1440px) {
       max-width: 990px;
@@ -204,7 +205,7 @@
   }
   
   #arrow_next label {
-    right: 0px;
+    right: 135px;
   }
   
   #rev1-4:checked ~ #first,
@@ -267,7 +268,7 @@
   }
   
   #arrow_prev-mini label {
-    left: 64px;
+    left: 120px;
   }
   
   #arrow_next-mini label {

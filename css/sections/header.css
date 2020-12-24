@@ -109,9 +109,6 @@
       }
 
       ul {
-        background-image: url('img/rectangle.png');
-        background-repeat: no-repeat;
-        background-position: left bottom;
         display: flex;
         justify-content: space-between;
         padding: 0;
@@ -122,6 +119,14 @@
       
         li {
           list-style-type: none;
+
+          &:hover {
+            background-image: url('img/rectangle.png');
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: 100% 8px;
+            text-transform: uppercase;
+          }
         }
       }
     }
