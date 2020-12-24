@@ -40,9 +40,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1415px;
 
       @media (max-width: 1460px) {
         margin: 0 auto;
+      }
+
+      @media (max-width: 1215px) {
         background-image: url('img/adaptive-windows-1.png');
         background-repeat: no-repeat;
         background-position: left center;
@@ -59,7 +65,7 @@
       }
 
       @media (max-width: 785px) {
-        background-position: top center;
+        background-position: bottom center;
         height: auto;
       }
   }
@@ -71,17 +77,20 @@
     margin-left: 870px;
 
     @media (max-width: 1460px) {
-      margin-left: 500px;
+      margin-left: 815px;
+    }
+
+    @media (max-width: 1215px) {
+      margin-left: 445px;
     }
 
     @media (max-width: 1020px) {
       margin-left: 430px;
-      padding-right: 30px;
     }
 
     @media (max-width: 785px) {
       text-align: center;
-      margin: 700px auto 0 auto;
+      margin: 50px auto 650px auto;
     }
   }
 

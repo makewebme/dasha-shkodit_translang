@@ -35,6 +35,10 @@
       margin: 0 auto;
     }
 
+    @media (max-width: 410px) {
+      width: 100%;
+    }
+
     .btn {
       width: 113px;
       height: 36px;
@@ -105,9 +109,6 @@
       }
 
       ul {
-        background-image: url('img/rectangle.png');
-        background-repeat: no-repeat;
-        background-position: left bottom;
         display: flex;
         justify-content: space-between;
         padding: 0;
@@ -118,6 +119,14 @@
       
         li {
           list-style-type: none;
+
+          &:hover {
+            background-image: url('img/rectangle.png');
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: 100% 8px;
+            text-transform: uppercase;
+          }
         }
       }
     }
@@ -137,6 +146,10 @@
 
     @media (max-width: 700px) {
       margin: 0 auto 163px auto;
+    }
+
+    @media (max-width: 410px) {
+      width: 100%;
     }
 
     .heading {
