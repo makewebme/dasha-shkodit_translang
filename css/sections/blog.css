@@ -2,6 +2,10 @@
 
   margin-top: 145px;
 
+  @media (max-width: 990px) {
+    margin-top: 200px;
+  }
+
   .section-heading {
     text-align: center;
   }
@@ -20,6 +24,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 97px;
+
+    @media (max-width: 1300px) {
+      justify-content: space-around;
+    }
   }
 
   .blog-post {
@@ -121,4 +129,10 @@
       }
     }
   }
+
+  .second-line {
+    @media (max-width: 860px) {
+      display: none;
+    }
+  } 
 }

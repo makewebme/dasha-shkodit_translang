@@ -2,9 +2,18 @@
   margin-top: 120px;
   position: relative;
 
+  @media (max-width: 875px) {
+    margin-top: 100px;
+    position: initial;
+  }
+
   .blue-wave {
     width: 61.36%;
     margin-right: auto;
+
+    @media (max-width: 875px) {
+      display: none;
+    }
   }
 
   .blue-wave1 {
@@ -24,32 +33,75 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    height: 1031px;
+    height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1495px;
+
+    @media (max-width: 1440px) {
+      max-width: 990px;
+    }
+
+    @media (max-width: 875px) {
+      position: initial;
+      margin: 0 auto;
+      transform: none;
+      flex-direction: column;
+      height: 1155px;
+    }
+
+    @media (max-width: 390px) {
+      height: 1225px;
+    }
   }
 
   .desc {
     max-width: 426px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 115px;
+
+    @media (max-width: 1580px) {
+      margin-right: 50px;
+    }
+
+    @media (max-width: 875px) {
+      align-items: center;
+      margin: 0;
+    }
 
     .text {
       color: #fff;
       font-size: 20px;
       margin-bottom: 55px;
+
+      @media (max-width: 875px) {
+        color: #161e6d;
+        margin-bottom: 0;
+      }
     }
 
     h2 {
       color: #fff;
       margin-bottom: 68px;
+
+      @media (max-width: 875px) {
+        color: #161e6d;
+        text-align: center;
+      }
     }
 
     .btn {
       width: 163px;
       height: 55px;
+
+      @media (max-width: 351px) {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -57,6 +109,10 @@
     position: relative;
     width: 900px;
     height: 800px;
+
+    @media (max-width: 1440px) {
+      display: none;
+    }
   }
 
   .slides {
@@ -104,7 +160,7 @@
     justify-content: flex-end;
   }
 
-  .review1 {
+  .review-wide {
     width: 420px;
     height: 280px;
     padding: 40px 60px 40px 45px;
@@ -113,16 +169,26 @@
     background-color: #fff;
   }
 
-  .review2 {
+  .review-square {
     width: 329px;
     height: 332px;
     padding: 45px 42px 44px 40px;
     box-shadow: 0 0 40px rgba(0,0,0,0.5);
     background-color: #fff;
+
+    @media (max-width: 1440px) {
+      padding: 45px 30px 44px 30px;
+    }
   }
 
   .slide_rev {
     display: none;
+  }
+
+  .arrow {
+    @media (max-width: 1440px) {
+      display: none;
+    }
   }
   
   #arrow_next label, #arrow_prev label {
@@ -139,7 +205,7 @@
   }
   
   #arrow_next label {
-    right: 64px;
+    right: 135px;
   }
   
   #rev1-4:checked ~ #first,
@@ -152,6 +218,79 @@
   #rev5-8:checked ~ #arrow_next label:nth-child(1),
   #rev1-4:checked ~ #arrow_prev label:nth-child(2),
   #rev5-8:checked ~ #arrow_prev label:nth-child(1) {
+    visibility: visible;
+  }
+
+  /* MINI-SLIDER */
+  
+  .slider-mini {
+    position: relative;
+    width: 330px;
+    height: 695px;
+    display: none;
+
+    @media (max-width: 1440px) {
+      display: initial;
+    }
+  }
+
+  .slides-mini {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .slide_rev-mini {
+    display: none;
+  }
+
+  .arrow-mini {
+    display: none;
+
+    @media (max-width: 1440px) {
+      display: initial;
+    }
+  }
+
+  #arrow_next-mini label, #arrow_prev-mini label {
+    color: rgba(0, 0, 0, .7);
+    position: absolute;
+    cursor: pointer;
+    visibility: hidden;
+    top: 98%;
+    font-size: 80px;
+  }
+  
+  #arrow_prev-mini label {
+    left: 70px;
+  }
+  
+  #arrow_next-mini label {
+    right: 85px;
+  }
+  
+  #rev1-2:checked ~ #first-mini,
+  #rev3-4:checked ~ #second-mini,
+  #rev5-6:checked ~ #third-mini,
+  #rev7-8:checked ~ #fourth-mini {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #rev1-2:checked ~ #arrow_next-mini label:nth-child(2),
+  #rev3-4:checked ~ #arrow_next-mini label:nth-child(3),
+  #rev5-6:checked ~ #arrow_next-mini label:nth-child(4),
+  #rev7-8:checked ~ #arrow_next-mini label:nth-child(1),
+  #rev1-2:checked ~ #arrow_prev-mini label:nth-child(4),
+  #rev3-4:checked ~ #arrow_prev-mini label:nth-child(1),
+  #rev5-6:checked ~ #arrow_prev-mini label:nth-child(2),
+  #rev7-8:checked ~ #arrow_prev-mini label:nth-child(3) {
     visibility: visible;
   }
 }

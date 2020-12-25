@@ -96,6 +96,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   border: 0;
+  cursor: pointer;
 }
 
 .boxes {
