@@ -2,7 +2,7 @@
   margin-top: 120px;
   position: relative;
 
-  @media (max-width: 875px) {
+  @media (max-width: 785px) {
     margin-top: 100px;
     position: initial;
   }
@@ -11,7 +11,7 @@
     width: 61.36%;
     margin-right: auto;
 
-    @media (max-width: 875px) {
+    @media (max-width: 785px) {
       display: none;
     }
   }
@@ -37,24 +37,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 1495px;
 
     @media (max-width: 1440px) {
       max-width: 990px;
     }
 
-    @media (max-width: 875px) {
+    @media (max-width: 785px) {
       position: initial;
       margin: 0 auto;
       transform: none;
       flex-direction: column;
-      height: 1155px;
-    }
-
-    @media (max-width: 390px) {
-      height: 1225px;
+      height: auto;
     }
   }
 
@@ -69,9 +65,14 @@
       margin-right: 50px;
     }
 
-    @media (max-width: 875px) {
+    @media (max-width: 1000px) {
+      max-width: 330px;
+    }
+
+    @media (max-width: 785px) {
       align-items: center;
       margin: 0;
+      height: auto;
     }
 
     .text {
@@ -79,17 +80,17 @@
       font-size: 20px;
       margin-bottom: 55px;
 
-      @media (max-width: 875px) {
+      @media (max-width: 785px) {
         color: #161e6d;
         margin-bottom: 0;
       }
     }
 
-    h2 {
+    .heading {
       color: #fff;
       margin-bottom: 68px;
 
-      @media (max-width: 875px) {
+      @media (max-width: 785px) {
         color: #161e6d;
         text-align: center;
       }
@@ -99,8 +100,8 @@
       width: 163px;
       height: 55px;
 
-      @media (max-width: 351px) {
-        margin-bottom: 30px;
+      @media (max-width: 785px) {
+      display: none;
       }
     }
   }
@@ -149,6 +150,10 @@
     font-family: 'Avenir Next LT Pro - Demi';
     font-size: 20px;
     font-weight: 400;
+
+    @media (max-width: 346px) {
+      line-height: 25px;
+    }
   }
 
   .reviews-left {
@@ -170,14 +175,20 @@
   }
 
   .review-square {
-    width: 329px;
-    height: 332px;
+    width: 100%;
+    max-width: 329px;
+    min-height: 323px;
     padding: 45px 42px 44px 40px;
     box-shadow: 0 0 40px rgba(0,0,0,0.5);
     background-color: #fff;
 
     @media (max-width: 1440px) {
       padding: 45px 30px 44px 30px;
+      margin-top: 45px;
+    }
+
+    @media (max-width: 370px) {
+      padding: 25px 25px;
     }
   }
 
@@ -225,8 +236,9 @@
   
   .slider-mini {
     position: relative;
-    width: 330px;
-    height: 695px;
+    width: 100%;
+    max-width: 330px;
+    height: 736px;
     display: none;
 
     @media (max-width: 1440px) {
@@ -263,16 +275,16 @@
     position: absolute;
     cursor: pointer;
     visibility: hidden;
-    top: 98%;
+    top: 96%;
     font-size: 80px;
   }
   
   #arrow_prev-mini label {
-    left: 70px;
+    left: 78px;
   }
   
   #arrow_next-mini label {
-    right: 85px;
+    right: 78px;
   }
   
   #rev1-2:checked ~ #first-mini,
@@ -293,4 +305,15 @@
   #rev7-8:checked ~ #arrow_prev-mini label:nth-child(3) {
     visibility: visible;
   }
+
+  .btn-bottom {
+    margin-top: 65px;
+    display: none;
+
+    @media (max-width: 785px) {
+    display: initial;
+    }
+  }
+  
+  
 }

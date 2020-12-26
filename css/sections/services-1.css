@@ -40,9 +40,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 1415px;
 
       @media (max-width: 1460px) {
         margin: 0 auto;
@@ -65,7 +62,7 @@
       }
 
       @media (max-width: 785px) {
-        background-position: bottom center;
+        background-image: none;
         height: auto;
       }
   }
@@ -80,34 +77,60 @@
       margin-left: 815px;
     }
 
-    @media (max-width: 1215px) {
-      margin-left: 445px;
+    @media (max-width: 1400px) {
+      margin-left: 760px;
     }
 
-    @media (max-width: 1020px) {
-      margin-left: 430px;
+    @media (max-width: 1215px) {
+      margin-left: 380px;
     }
 
     @media (max-width: 785px) {
       text-align: center;
-      margin: 50px auto 650px auto;
+      margin: 50px auto 0 auto;
     }
   }
 
-  h2 {
+  .heading {
     margin-bottom: 60px;
     margin-top: 0;
     font-size: 40px;
     font-weight: 500;
     line-height: 50px;
 
+    @media (max-width: 1000px) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+
     @media (max-width: 890px) {
-      margin-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 770px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  
+    @media (max-width: 680px) {
+      font-size: 25px;
+      line-height: 35px;
     }
   }
 
   .text {
     margin: 0;
+  }
+
+  img {
+    display: none;
+    
+    @media (max-width: 785px) {
+      display: flex;
+      width: 100%;
+      max-width: 420px;
+      margin: 20px auto 0 auto;
+    }
   }
 
   .btn {
