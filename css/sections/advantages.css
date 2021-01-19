@@ -50,6 +50,11 @@
         padding: 50px 35px 50px 35px;
       }
 
+      svg {
+        width: 100px;
+        height: 100px;
+      }
+
       .box-heading {
         padding-top: 46px;
         max-width: 260px;
@@ -68,6 +73,10 @@
 
         .box-heading {
           color: #fff;
+        }
+
+        path {
+          fill: #fff;
         }
       }
 
