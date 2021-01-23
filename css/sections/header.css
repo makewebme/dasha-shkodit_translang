@@ -15,28 +15,74 @@
 
   @media (max-width: 1120px) {
     background-image: none;
+    height: auto;
+  }
+
+  .header-cont {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 160px;
+
+    @media (max-width: 1120px) {
+      padding: 0 100px;
+    }
+
+    @media (max-width: 1000px) {
+      padding: 0 50px;
+    }
   }
 
   .top-bar {
     display: flex;
     width: 100%;
-    padding: 54px 160px 0;
+    padding-top: 54px;
     align-items: center;
+    justify-content: space-between;
 
     @media (max-width: 1120px) {
-      width: 410px;
       flex-wrap: wrap;
       padding-left: 0;
       padding-right: 0;
-      margin-left: 160px;
     }
 
     @media (max-width: 700px) {
       margin: 0 auto;
     }
+    
+    @media (max-width: 520px) {
+        align-items: start;
+      }
 
     @media (max-width: 410px) {
       width: 100%;
+    }
+
+    .left-side {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 520px) {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+
+    .right-side {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 142px;
+      padding-right: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 45px;
+
+      @media (max-width: 520px) {
+        margin-right: 0;
+      }
     }
 
     .btn {
@@ -50,16 +96,9 @@
       text-align: center;
       text-transform: uppercase;
 
-      @media (max-width: 1120px) {
-        order: 1;
-        margin: 0 auto;
+      @media (max-width: 660px) {
+        display: none;
       }
-    }
-
-    .logo-text {
-      padding-left: 8px;
-      padding-top: 4px;
-      padding-bottom: 3px;
     }
 
     .phone {
@@ -72,13 +111,7 @@
       font-weight: 500;
       line-height: 50px;
       text-align: right;
-      margin-left: 45px;
       padding-left: 32px;
-
-      @media (max-width: 1120px) {
-        order: 3;
-        margin-left: 0;
-      }
     }
 
     .nav {
@@ -103,9 +136,11 @@
       }
 
       @media (max-width: 1120px) {
-        order: 2;
-        margin: 0;
         background-image: url('img/menu-hamburger-black.png');
+      }
+
+      @media (max-width: 660px) {
+        margin: 0;
       }
 
       ul {
@@ -120,32 +155,63 @@
         li {
           list-style-type: none;
 
+          @media (max-width: 1380px) {
+            margin: 20px 20px;
+          }
+        }
+
+        a {
+          @media (max-width: 1380px) {
+          color: black;
+          }
+
           &:hover {
             background-image: url('img/rectangle.png');
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: 100% 8px;
-            text-transform: uppercase;
           }
+        }
+      }
+
+      ul.active {
+
+        @media (max-width: 1380px) {
+          display: block;
+          background-color: rgba(255, 255, 255, 0.5);
+          width: 125px;
+          margin-top: 60px;
+          border-radius: 5px;
+          box-shadow: 0 0 20px rgba(0,0,0,0.5);
+          position: absolute;
+          z-index: 50;
+        }
+
+        @media (max-width: 1120px) {
+
+          background-color: rgb(255, 255, 255);
+        }
+
+        @media (max-width: 660px) {
+          right: 50px;
         }
       }
     }
   }
 
   .text-header {
-    width: 410px;
+    max-width: 410px;
     text-align: left;
     font-weight: 400;
-    margin-bottom: 163px;
-    margin-left: 160px;
     padding-top: 260px;
 
     @media (max-width: 1120px) {
       padding-top: 130px;
+      max-width: 580px;
     }
 
-    @media (max-width: 700px) {
-      margin: 0 auto 163px auto;
+    @media (max-width: 480px) {
+      padding-top: 80px;
     }
 
     @media (max-width: 410px) {
@@ -154,6 +220,19 @@
 
     .heading {
       margin-top: 0;
+      font-size: 50px;
+      line-height: 65px;
+      margin-bottom: 50px;
+    
+      @media (max-width: 680px) {
+        font-size: 45px;
+        line-height: 60px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 40px;
+        line-height: 55px;
+      }
     }
 
     .text {

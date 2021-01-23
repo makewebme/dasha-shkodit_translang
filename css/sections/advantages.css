@@ -2,7 +2,7 @@
   margin: 143px auto 170px auto;
 
   @media (max-width: 1160px) {
-    margin: 75px auto 0px auto;
+    margin: 143px auto 80px auto;
   }
 
   .cont {
@@ -11,16 +11,11 @@
     background-position: top center;
   }
 
-  .mtv {
+  .heading {
     max-width: 845px;
     padding-top: 35px;
     text-align: center;
     margin: 0 auto;
-  }
-
-  @media (max-width: 1000px) {
-    padding-left: 35px;
-    padding-right: 35px;
   }
 
   .boxes {
@@ -34,8 +29,8 @@
     }
 
     .box {
-      width: 383px;
-      height: 490px;
+      max-width: 383px;
+      width: 100%;
       padding: 82px 57px 82px 50px;
       color: #52585b;
       font-family: 'Avenir Next LT Pro', sans-serif;
@@ -49,6 +44,15 @@
       
       @media (max-width: 1160px) {
         margin-bottom: 30px;
+      }
+
+      @media (max-width: 485px) {
+        padding: 50px 35px 50px 35px;
+      }
+
+      svg {
+        width: 100px;
+        height: 100px;
       }
 
       .box-heading {
@@ -69,6 +73,10 @@
 
         .box-heading {
           color: #fff;
+        }
+
+        path {
+          fill: #fff;
         }
       }
 

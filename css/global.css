@@ -49,11 +49,26 @@ body {
   }
 }
 
-h2 {
+.heading {
   color: #161e6d;
   font-size: 45px;
   font-weight: 400;
   line-height: 55px;
+
+  @media (max-width: 1021px) {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  @media (max-width: 770px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 680px) {
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 
 a {
@@ -66,16 +81,10 @@ a {
 /* Global classes */
 
 .cont {
-  max-width: 1360px;
+  max-width: 1460px;
   width: 100%;
   margin: 0 auto;
-}
-
-.heading {
-  color: #161e6d;
-  font-size: 50px;
-  line-height: 65px;
-  margin-bottom: 50px;
+  padding: 0 50px;
 }
 
 .text {
