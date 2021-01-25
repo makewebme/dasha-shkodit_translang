@@ -9,146 +9,36 @@ section.section-testimonials
       button.btn See more
 
     div.slider
-      input.slide_rev(id="rev1-4" name="slide_rev" type="radio" checked="checked")
-      input.slide_rev(id="rev5-8" name="slide_rev" type="radio")
+      div.slides
 
-      div.slides(id="first")
-        div.review-box
-          div.reviews-left
-            div.review-wide
-              p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
+      div.arrows
+        div.arrow.prev
+        div.arrow.next
 
-              div.username Dolores Galloway1
-
-            div.review-square
-              p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-              div.username Anna Fry1
-
-          div.reviews-right
-            div.review-square
-              p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-              div.username Adam Joiner1
-
-            div.review-wide
-              p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-              div.username Darnell Freeman1
-
-      div.slides(id="second")
-        div.review-box
-          div.reviews-left
-            div.review-wide
-              p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-              div.username Dolores Galloway2
-
-            div.review-square
-              p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-              div.username Anna Fry2
-
-          div.reviews-right
-            div.review-square
-              p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-              div.username Adam Joiner2
-
-            div.review-wide
-              p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-              div.username Darnell Freeman2
-
-      div.arrow(id="arrow_next")
-        label(for="rev1-4")
-          img(src="img/arrow-right-grey.png")
-
-        label(for="rev5-8")
-          img(src="img/arrow-right-red.png")
-
-      div.arrow(id="arrow_prev")
-        label(for="rev1-4")
-          img(src="img/arrow-left-red.png")
-
-        label(for="rev5-8")
-          img(src="img/arrow-left-grey.png")
-
-    div.slider-mini
-
-      input.slide_rev-mini(id="rev1-2" name="slide_rev-mini" type="radio" checked="checked")
-      input.slide_rev-mini(id="rev3-4" name="slide_rev-mini" type="radio")
-      input.slide_rev-mini(id="rev5-6" name="slide_rev-mini" type="radio")
-      input.slide_rev-mini(id="rev7-8" name="slide_rev-mini" type="radio")
-
-      div.slides-mini(id="first-mini")
-        div.review-square.review1
-          p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-          div.username Dolores Galloway1
-
-        div.review-square.review2
-          p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-          div.username Anna Fry1
-
-      div.slides-mini(id="second-mini")
-        div.review-square.review3
-          p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-          div.username Adam Joiner1
-
-        div.review-square.review4
-          p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-          div.username Darnell Freeman1
-
-      div.slides-mini(id="third-mini")
-        div.review-square.review5
-          p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-          div.username Dolores Galloway2
-
-        div.review-square.review6
-          p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-          div.username Anna Fry2
-
-      div.slides-mini(id="fourth-mini")
-        div.review-square.review7
-          p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-          div.username Adam Joiner2
-
-        div.review-square.review8
-          p.text Funding freemium technology focus equity bootstrapping usernce niche market. Seed round agile development growth hacking retur on investment alpha investor advisor marketing pitch gen scrum.
-
-          div.username Darnell Freeman2
-
-      div.arrow-mini(id="arrow_next-mini")
-        label(for="rev1-2")
-          img(src="img/arrow-right-grey.png")
-
-        label(for="rev3-4")
-          img(src="img/arrow-right-red.png")
-
-        label(for="rev5-6")
-          img(src="img/arrow-right-red.png")
-
-        label(for="rev7-8")
-          img(src="img/arrow-right-red.png")
-
-      div.arrow-mini(id="arrow_prev-mini")
-        label(for="rev1-2")
-          img(src="img/arrow-left-red.png")
-
-        label(for="rev3-4")
-          img(src="img/arrow-left-red.png")
-
-        label(for="rev5-6")
-          img(src="img/arrow-left-red.png")
-
-        label(for="rev7-8")
-          img(src="img/arrow-left-grey.png")
 
     button.btn.btn-bottom See more
+
+
+
+//- Comments template
+template#comments
+  div.slides
+    div.review-outer
+      div.review-inner
+        p.body
+        div.username
+
+    div.review-outer
+      div.review-inner
+        p.body
+        div.username
+
+    div.review-outer
+      div.review-inner
+        p.body
+        div.username
+
+    div.review-outer
+      div.review-inner
+        p.body
+        div.username
