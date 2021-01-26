@@ -1,16 +1,13 @@
 const commentsTemplate = document.querySelector('#comments')
+const renderRoot = document.querySelector('.slider')
 
 let comments = []
 let commentsOffset = 0
 const commentsVisible = 4
-let commentsPages
 
 
 const renderComments = () => {
-  const renderRoot = document.querySelector('.slider')
-
-  const prevSlides = renderRoot.querySelector('.slides')
-  if (prevSlides) prevSlides.remove()
+  renderRoot.querySelector('.slides').remove()
 
   const commentsToRender = comments.slice(commentsOffset * commentsVisible, commentsOffset * commentsVisible + commentsVisible)
   const commentsMarkup = commentsTemplate.content.querySelector('.slides').cloneNode(true)
@@ -57,7 +54,6 @@ btnNextNode.addEventListener('click', btnArrowHandler)
 fetch('http://jsonplaceholder.typicode.com/comments')
   .then((res) => res.json())
   .then((res) => {
-    comments = res.slice(0, 25)
-    commentsPages = Math.ceil(comments.length / commentsVisible)
+    comments = res.slice(0, 26)
+    renderComments()
   })
-  .then(() => renderComments())
