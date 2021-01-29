@@ -6,6 +6,7 @@
   src: url('/fonts/Avenir/AvenirNextLTPro-Thin.otf');
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
   src: url('/fonts/Avenir/AvenirNextLTPro-Regular.otf');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
   src: url('/fonts/Avenir/AvenirNextLTPro-Demi.otf');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,12 +30,14 @@
   src: url('/fonts/Avenir/AvenirNextLTPro-Bold.otf');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Font Awesome';
   src: url('/fonts/FontAwesome.otf');
   font-style: normal;
+  font-display: swap;
 }
 
 
@@ -41,7 +46,7 @@
 /* Global tags */
 
 body {
-  font-family: "Avenir Next LT Pro", sans-serif;
+  font-family: "Avenir Next LT Pro", Arial, sans-serif;
   margin: 0;
 
   * {
